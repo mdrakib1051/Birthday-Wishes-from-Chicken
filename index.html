@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Birthday Wishes from Chicken</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;600&family=Anek+Bangla:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="name-screen" class="overlay">
+        <div class="input-box">
+            <h2>তোমার নাম লিখো</h2>
+            <input type="text" id="userName" placeholder="এখানে নাম লিখুন..." autocomplete="off">
+            <br>
+            <button onclick="startGame()">ভিতরে আসুন</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="room-view" id="bgImage"></div>
+        
+        <div class="rain-overlay"></div>
+        
+        <canvas id="fogCanvas"></canvas>
+
+        <div class="instruction" id="msg">জানলার কাঁচটি পুরোপুরি পরিষ্কার করো...</div>
+
+        <div class="premium-card" id="premiumCard">
+            <div class="close-btn" onclick="closeCard()">×</div>
+            <div class="card-content">
+                <h1 class="title">রমজান মোবারক</h1>
+                <h3 id="display-name">প্রিয়, </h3>
+                <div class="letter-body">
+                    <p>শুভ জন্মদিন পিওতমা,💖
+পুরন হোক তোমার সকল আশা🎈
+বেচে থাকো শত বছর..,💝
+সারাজীবন অটুট থাকুক তোমার আমার এই ভালোবাসা 🫶 🎁
+</p>
+                </div>
+                <div class="signature">
+                    <p>ইতি</p>
+                  <p>তোমার পরানের চেয়ে পিও, </p>
+                    <p class="name-bold">ইও ইও মুরগির বাচ্চা🐥</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
